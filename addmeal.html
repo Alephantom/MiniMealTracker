@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#10231c] dark justify-between group/design-root overflow-x-hidden"
+      style='font-family: Manrope, "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-[#10231c] p-4 pb-2 justify-between">
+          <div class="text-white flex size-12 shrink-0 items-center" data-icon="X" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Add Meal</h2>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE9crYfy5n_RjvG1S0yCeS5fYdUscjm-5_VeY4PKo2iffMsNyFS0pAjBMdTPO2neqVf75bBVmeyS7lWBIOWghjL6P6YBEJQq6KYipuzi7SZbw9U6MFyhqVp9AqKDwZoe-9x6fxRgkgBhjsbk2YxFrtdXxOwkWaT2zohaPAK5wdkPoHQ7f73_GSpmOWR8HdC6qMFbADShid4IekhraF7SJqjERNpvWu1_QoDMPVGKfWVXE1hRj_CIJ22uFqD3w4Q4an_E1vugVz4g");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Today</p>
+              <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Select Date</p>
+              <div class="flex items-end gap-3 justify-between"><p class="text-[#8ecdb7] text-base font-normal leading-normal">10/26/2024</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3 p-3 flex-wrap pr-4">
+          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#214a3c] pl-4 pr-4">
+            <p class="text-white text-sm font-medium leading-normal">🥞 Breakfast</p>
+          </div>
+          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#214a3c] pl-4 pr-4">
+            <p class="text-white text-sm font-medium leading-normal">🥐 Snack</p>
+          </div>
+          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#214a3c] pl-4 pr-4">
+            <p class="text-white text-sm font-medium leading-normal">🍛 Lunch</p>
+          </div>
+          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#214a3c] pl-4 pr-4">
+            <p class="text-white text-sm font-medium leading-normal">🥤 Merienda</p>
+          </div>
+          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#214a3c] pl-4 pr-4">
+            <p class="text-white text-sm font-medium leading-normal">🍽 Dinner</p>
+          </div>
+        </div>
+        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+          <label class="flex flex-col min-w-40 flex-1">
+            <input
+              placeholder="Meal Name"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#214a3c] focus:border-none h-14 placeholder:text-[#8ecdb7] p-4 text-base font-normal leading-normal"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+          <label class="flex flex-col min-w-40 flex-1">
+            <textarea
+              placeholder="Notes (optional)"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#214a3c] focus:border-none min-h-36 placeholder:text-[#8ecdb7] p-4 text-base font-normal leading-normal"
+            ></textarea>
+          </label>
+        </div>
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Meal Photo</h3>
+        <div class="flex flex-col p-4">
+          <div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-[#2f6a55] px-6 py-14">
+            <div class="flex max-w-[480px] flex-col items-center gap-2">
+              <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Add Photo</p>
+              <p class="text-white text-sm font-normal leading-normal max-w-[480px] text-center">Take a photo of the meal</p>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#214a3c] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Add Photo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex px-4 py-3">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#019863] text-white text-base font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Select Ingredients</span>
+          </button>
+        </div>
+        <div class="h-5 bg-[#10231c]"></div>
+      </div>
+    </div>
+  </body>
+</html>
